@@ -1,0 +1,29 @@
+.tela {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+body {
+    background-color: #ac9cf3;
+}
+
+
+.botao {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.btn {
+    background-color: white !important;
+    color: black !important;
+    border: none;
+    margin: 5%;
+}
+
+h1 {
+    color: white;
+}
