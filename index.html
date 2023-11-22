@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <script src="js/index.js"></script>
+    <script src="js/requests.js"></script>
 </head>
 
 <body>
@@ -23,55 +24,55 @@
             <h1>CADASTRO DE PESSOAS</h1>
             <div class="ordenar">
                 <label for="exampleInputEmail1" class="form-label"></label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                <input type="text" class="form-control" name="nome-pessoa" id="exampleInputEmail1" aria-describedby="emailHelp"
                     placeholder="NOME DE USUARIO:">
                 <div id="emailHelp" class="form-text"></div>
             </div>
 
             <div class="ordenar">
                 <label for="exampleInputEmail1" class="form-label"></label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                <input type="text" class="form-control" name="cpf" id="exampleInputEmail1" aria-describedby="emailHelp"
                     placeholder="CPF:" oninput="mascara(this)">
                 <div id="emailHelp" class="form-text"></div>
             </div>
 
             <div class="ordenar">
                 <label for="exampleInputEmail1" class="form-label"></label>
-                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                <input type="number" class="form-control" name="peso" id="exampleInputEmail1" aria-describedby="emailHelp"
                     placeholder="PESO:">
                 <div id="emailHelp" class="form-text"></div>
             </div>
 
             <div class="ordenar">
                 <label for="exampleInputEmail1" class="form-label"></label>
-                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                <input type="number" class="form-control" name="altura" id="exampleInputEmail1" aria-describedby="emailHelp"
                     placeholder="ALTURA:">
                 <div id="emailHelp" class="form-text"></div>
             </div>
 
             <div class="ordenar">
                 <label for="exampleInputEmail1" class="form-label"></label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                <input type="text" class="form-control" name="endereco" id="exampleInputEmail1" aria-describedby="emailHelp"
                     placeholder="ENDEREÇO:">
                 <div id="emailHelp" class="form-text"></div>
             </div>
 
             <div class="ordenar">
                 <label for="exampleInputEmail1" class="form-label"></label>
-                <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                <input type="date" class="form-control" name="data-de-nascimento" id="exampleInputEmail1" aria-describedby="emailHelp"
                     placeholder="DATA DE NASCIMENTO:">
                 <div id="emailHelp" class="form-text"></div>
             </div>
 
             <div class="ordenar">
                 <label for="exampleInputEmail1" class="form-label"></label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    maxlength="15" onkeyup="mascaraTel(event)" placeholder="TELEFONE:" oninput="mascaraCel(this)">
+                <input type="text" class="form-control" name="telefone" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    maxlength="15" placeholder="TELEFONE:" oninput="mascaraTel(event)">
                 <div id="emailHelp" class="form-text"></div>
             </div>
 
             <div class="botao">
-                <button type="button" class="btn btn-primary">CADASTRAR</button>
+                <button type="button" class="btn btn-primary" onclick="cadastrar()">CADASTRAR</button>
             </div>
         </div>
     </div>
